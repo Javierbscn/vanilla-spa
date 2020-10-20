@@ -2,8 +2,10 @@
 @import 'config/variables';
 @import 'config/mixins';
 @import 'config/normalize';
-@import 'config/pattern';
+@import 'config/body';
 
 // Blocks
+@import 'blocks/index/navbar';
+@import 'blocks/index/navbar-btn';
 @import 'blocks/home';
 

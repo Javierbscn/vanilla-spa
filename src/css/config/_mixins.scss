@@ -2,11 +2,14 @@
     @return url('../assets/img/'+ $file);
 }
 
-@mixin flexAlign($direction, $jcontent, $alcontent) {
+@mixin flexAlign($jcontent, $alcontent) {
     display        : flex;
-    flex-flow      : $direction wrap;
     justify-content: $jcontent;
     align-items    : $alcontent;
+}
+
+@mixin flexFlow($direction) {
+    flex-flow      : $direction wrap;
 }
 
 @mixin mobile() {

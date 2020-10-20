@@ -1,14 +1,15 @@
 // Variables - CSS
 :root {
-    --primary-color      : #336b87;
+    --primary-color      : #90afc5;
+    --primary-modal-color: rgb(144, 175, 197, .8);
+    --dark-primary-color : #336b87;
     --secondary-color    : #763626;
-    --light-primary-color: #90afc5;
     --text-primary       : #2a3132;
     --white              : #fff;
     --gray               : #808080;
     --black              : #000;
     --letter-spacing     : 1px;
-    --border-radius      : 3px;
+    --border-radius      : 30px;
     --z-back             : -10;
     --z-normal           : 1;
     --z-tooltip          : 10;
@@ -17,13 +18,14 @@
 }
 
 // Colors
-$primary-color      : var(--primary-color);
-$secondary-color    : var(--secondary-color);
-$light-primary-color: var(--light-primary-color);
-$text-primary       : var(--text-primary);
-$white              : var(--white);
-$gray               : var(--gray);
-$black              : var(--black);
+$primary-color       : var(--primary-color);
+$primary-modal-color : var(--primary-modal-color);
+$secondary-color     : var(--secondary-color);
+$light-primary-color : var(--light-primary-color);
+$text-primary        : var(--text-primary);
+$white               : var(--white);
+$gray                : var(--gray);
+$black               : var(--black);
 
 // Variables
 $letter-spacing: var(--letter-spacing);
