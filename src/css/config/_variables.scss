@@ -1,14 +1,33 @@
 // Variables - CSS
 :root {
-    
-    --z-back          : -10;
-    --z-normal        : 1;
-    --z-tooltip       : 10;
-    --z-fixed         : 100;
-    --z-modal         : 1000;
+    --primary-color      : #336b87;
+    --secondary-color    : #763626;
+    --light-primary-color: #90afc5;
+    --text-primary       : #2a3132;
+    --white              : #fff;
+    --gray               : #808080;
+    --black              : #000;
+    --letter-spacing     : 1px;
+    --border-radius      : 3px;
+    --z-back             : -10;
+    --z-normal           : 1;
+    --z-tooltip          : 10;
+    --z-fixed            : 100;
+    --z-modal            : 1000;
 }
 
 // Colors
+$primary-color      : var(--primary-color);
+$secondary-color    : var(--secondary-color);
+$light-primary-color: var(--light-primary-color);
+$text-primary       : var(--text-primary);
+$white              : var(--white);
+$gray               : var(--gray);
+$black              : var(--black);
+
+// Variables
+$letter-spacing: var(--letter-spacing);
+$border-radius : var(--border-radius);
 
 
 // Z index
@@ -19,7 +38,7 @@ $z-fixed   : var(--z-fixed);
 $z-modal   : var(--z-modal);
 
 // Breakpoints
-$screenSmall  :      320px;
-$screenMedium :      768px;
-$screenLarge  :      992px;
-$screenExtralarge:  1200px;
+$screenSmall  : 320px;
+$screenMedium : 768px;
+$screenLarge  : 992px;
+$screenExtralarge: 1200px;
