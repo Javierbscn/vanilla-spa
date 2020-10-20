@@ -15,15 +15,15 @@ const router = (route) => {
         }
         
         case '#/breding': {
-            return
+            return content.appendChild(pages.breding())
         }
 
         case '#/food': {
-            return
+            return content.appendChild(pages.food())
         }
 
         default:{
-
+            return
         }
     }
 }
