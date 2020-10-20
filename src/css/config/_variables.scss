@@ -1,0 +1,29 @@
+// Variables - CSS
+:root {
+    
+    --z-back          : -10;
+    --z-normal        : 1;
+    --z-tooltip       : 10;
+    --z-fixed         : 100;
+    --z-modal         : 1000;
+    --screenSmall     : 320px;
+    --screenMedium    : 768px;
+    --screenLarge     : 992px;
+    --screenExtralarge: 1200px;
+}
+
+// Colors
+
+
+// Z index
+$z-back    : var(--z-back);
+$z-normal  : var(--z-normal);
+$z-tooltip : var(--z-tooltip);
+$z-fixed   : var(--z-fixed);
+$z-modal   : var(--z-modal);
+
+// Breakpoints
+$screenSmall  : var(--screenSmall);
+$screenMedium : var(--screenMedium);
+$screenLarge  : var(--screenLarge);
+$screenExtralarge: var(--screenExtralarge);
