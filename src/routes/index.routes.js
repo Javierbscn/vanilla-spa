@@ -23,7 +23,7 @@ const router = (route) => {
         }
 
         default:{
-            return
+            return content.appendChild(pages.notFound())
         }
     }
 }
