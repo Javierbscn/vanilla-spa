@@ -1,31 +1,31 @@
-import { pages } from '../controllers/pages'
+import { pages } from '../controllers/pages';
 
-let content = document.querySelector('#container-route')
+let content = document.querySelector('#container-route');
 
 const router = (route) => {
-    content.innerHTML = ''
+	content.innerHTML = '';
 
-    switch (route) {
-        case '#/':{
-            return content.appendChild(pages.home())
-        }
+	switch (route) {
+		case '#/': {
+			return content.appendChild(pages.home());
+		}
 
-        case '#/habitat': {
-            return content.appendChild(pages.habitat())
-        }
-        
-        case '#/breding': {
-            return content.appendChild(pages.breding())
-        }
+		case '#/habitat': {
+			return content.appendChild(pages.habitat());
+		}
 
-        case '#/food': {
-            return content.appendChild(pages.food())
-        }
+		case '#/breding': {
+			return content.appendChild(pages.breding());
+		}
 
-        default:{
-            return content.appendChild(pages.notFound())
-        }
-    }
-}
+		case '#/food': {
+			return content.appendChild(pages.food());
+		}
 
-export { router }
+		default: {
+			return content.appendChild(pages.notFound());
+		}
+	}
+};
+
+export { router };
