@@ -2,7 +2,7 @@ import { pages } from '../controllers/pages'
 
 let content = document.querySelector('#container-route')
 
-const router = async (route) => {
+const router = (route) => {
     content.innerHTML = ''
 
     switch (route) {
@@ -11,7 +11,7 @@ const router = async (route) => {
         }
 
         case '#/habitat': {
-            return
+            return content.appendChild(pages.habitat())
         }
         
         case '#/breding': {
