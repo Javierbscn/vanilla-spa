@@ -5,7 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "dev": "webpack serve",
-    "build": "webpack -p"
+    "build": "webpack --progress"
   },
   "author": "Javier B",
   "license": "ISC",
