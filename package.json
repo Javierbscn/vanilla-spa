@@ -4,8 +4,7 @@
   "description": "A basic javascript spa",
   "main": "src/main.js",
   "scripts": {
-    "dev": "webpack serve",
-    "build": "webpack --progress"
+    "dev": "webpack serve"
   },
   "author": "Javier B",
   "license": "ISC",
