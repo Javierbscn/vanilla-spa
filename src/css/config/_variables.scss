@@ -1,7 +1,7 @@
 // Variables - CSS
 :root {
     --primary-color      : #90afc5;
-    --primary-modal-color: rgb(144, 175, 197, .8);
+    --primary-modal-color: rgb(144, 175, 197, .85);
     --dark-primary-color : #336b87;
     --secondary-color    : #763626;
     --text-primary       : #2a3132;
@@ -21,7 +21,7 @@
 $primary-color       : var(--primary-color);
 $primary-modal-color : var(--primary-modal-color);
 $secondary-color     : var(--secondary-color);
-$light-primary-color : var(--light-primary-color);
+$dark-primary-color  : var(--dark-primary-color);
 $text-primary        : var(--text-primary);
 $white               : var(--white);
 $gray                : var(--gray);
