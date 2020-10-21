@@ -5,8 +5,11 @@
 @import 'config/body';
 
 // Blocks
+// Index
 @import 'blocks/index/navbar';
 @import 'blocks/index/panel-btn';
 @import 'blocks/index/footer';
-@import 'blocks/home';
+
+// Home
+@import 'blocks/home/banner';
 
