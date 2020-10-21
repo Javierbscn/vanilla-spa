@@ -1,6 +1,6 @@
-.navbar-btn {
+.panel-btn {
     position        : fixed;
-    bottom          : 1vh;
+    bottom          : 3vh;
     right           : 1vw;
     width           : 4rem;
     height          : 4rem;
@@ -14,5 +14,11 @@
     .hamburger-inner::before {
         width           : 35px;
         background-color: $secondary-color;
+    }
+}
+
+@include tablet {
+    .panel-btn {
+        display: none;
     }
 }

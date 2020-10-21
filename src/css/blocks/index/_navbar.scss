@@ -34,7 +34,7 @@ header {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .panel {
         position          : fixed;
         z-index           : calc($z-fixed - 1);
