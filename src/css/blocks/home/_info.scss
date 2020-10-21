@@ -1,14 +1,14 @@
-.info {
-    .title {
-        width     : 100%;
-        text-align: center;
-        margin-top: 1.5rem;
+.title {
+    width     : 100%;
+    text-align: center;
+    margin-top: 5rem;
 
-        h2 {
-            color: $text-primary;
-        }
+    h2 {
+        color: $text-primary;
     }
+}
 
+.info {
     .data {
         margin-bottom: 5rem;
 
@@ -33,15 +33,15 @@
 }
 
 @include mobile {
+    .title {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
     .info {
         @include flexAlign(center, center);
         @include flexFlow(column);
-
-        .title {
-            h2 {
-                font-size: 2rem;
-            }
-        }
 
         .data {
             width: 100%;
@@ -60,13 +60,13 @@
 }
 
 @include laptop {
-    .info {
-        .title {
-            h2 {
-                font-size: 2.5rem;
-            }
+    .title {
+        h2 {
+            font-size: 2.5rem;
         }
+    }
 
+    .info {
         .data {
             width: 80%;
             @include flexAlign(space-around, center);

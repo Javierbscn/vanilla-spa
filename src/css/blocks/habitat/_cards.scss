@@ -1,0 +1,29 @@
+.cards {
+    @include flexAlign(space-around, center);
+    @include flexFlow(row);
+
+    .card {
+        width             : 30vw;
+        padding           : 1.75rem;
+        background-color  : $primary-color;
+        border-radius     : $border-radius;
+        transition        : box-shadow .3s linear;
+        -moz-transition   : box-shadow .3s linear;
+        -webkit-transition: box-shadow .3s linear;
+        -o-transition     : box-shadow .3s linear;
+
+        &:hover {
+            box-shadow: 0 0 5px 1px $black;
+        }
+
+        img {
+            width        : 100%;
+            margin-bottom: .75rem;
+            border-radius: $border-radius;
+        }
+
+        p {
+            color: $text-primary;
+        }
+    }
+}
