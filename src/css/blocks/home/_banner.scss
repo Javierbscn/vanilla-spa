@@ -12,7 +12,7 @@
         height         : 100%;
         background     : img('main-banner.jpg') no-repeat bottom center fixed;
         background-size: cover;
-        opacity        : .7;
+        opacity        : $opacity;
     }
 
     .wrap {

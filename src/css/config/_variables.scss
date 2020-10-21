@@ -10,6 +10,7 @@
     --black              : #000;
     --letter-spacing     : 1px;
     --border-radius      : 30px;
+    --opacity            : .7;
     --z-back             : -10;
     --z-normal           : 1;
     --z-tooltip          : 10;
@@ -30,6 +31,7 @@ $black               : var(--black);
 // Variables
 $letter-spacing: var(--letter-spacing);
 $border-radius : var(--border-radius);
+$opacity       : var(--opacity);
 
 
 // Z index
