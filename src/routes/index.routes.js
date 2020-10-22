@@ -1,4 +1,5 @@
 import { pages } from '../controllers/pages';
+import slider from '../js/slider';
 
 let content = document.querySelector('#container-route');
 
@@ -15,7 +16,7 @@ const router = (route) => {
 		}
 
 		case '#/breding': {
-			return content.appendChild(pages.breding());
+			return content.appendChild(pages.breding()) && slider();
 		}
 
 		case '#/food': {
