@@ -1,6 +1,6 @@
 import './css/styles.scss';
 import { router } from './routes/index.routes';
-import hamburgerMenu from './controllers/index.controller';
+import hamburgerMenu from './js/hamburger_menu';
 
 document.addEventListener('DOMContentLoaded', () => {
     router('#/')
