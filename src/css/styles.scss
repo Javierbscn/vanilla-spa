@@ -4,6 +4,9 @@
 @import 'config/normalize';
 @import 'config/body';
 
+// Errors styles
+@import 'blocks/errors/error-404';
+
 // Blocks
 // Index
 @import 'blocks/index/navbar';

@@ -1,0 +1,74 @@
+.error-404 {
+    @include flexAlign(center, center);
+    @include flexFlow(column);
+    text-align: center;
+    min-height: 95vh;
+
+    .error-message {
+        .message-title,
+        p,
+        p a {
+            color: $text-primary;
+        }
+
+        img {
+            width : 250px;
+            height: auto;
+        }
+
+        .message-title {
+            margin: 1.25rem 0;
+        }
+
+        p {
+            padding: 1rem;
+
+            a {
+                text-decoration: underline;
+                transition     : all .3s linear;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+    .error-404 {
+        .error-message {
+            .message-title {
+                font-size: 2.25rem;
+            }
+
+            p {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .error-404 {
+        .error-message {
+            .message-title {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@include laptop {
+    .error-404 {
+        .error-message {
+            .message-title {
+                font-size: 3.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
