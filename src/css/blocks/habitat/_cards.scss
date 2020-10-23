@@ -12,7 +12,7 @@
         -o-transition     : box-shadow .3s linear;
 
         &:hover {
-            box-shadow: 0 0 5px 1px $black;
+            box-shadow: $box-shadow;
         }
 
         img {

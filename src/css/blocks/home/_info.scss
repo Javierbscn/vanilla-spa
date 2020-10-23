@@ -18,7 +18,7 @@
             margin          : 1.25rem;
             text-align      : center;
             border-radius   : $border-radius;
-            box-shadow      : 0 0 5px 1px $black;
+            box-shadow      : $box-shadow;
 
             h3,
             p {

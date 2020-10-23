@@ -25,7 +25,7 @@
                 visibility: visible;
             }
 
-            &:before {
+            &::before {
                 content         : '';
                 position        : absolute;
                 top             : 0;
@@ -59,6 +59,7 @@
             display           : block;
             margin            : .5rem;
             font-weight       : bold;
+            cursor            : pointer;
             border-radius     : $border-radius;
             color             : $text-primary;
             background-color  : $primary-color;

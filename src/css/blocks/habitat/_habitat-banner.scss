@@ -6,7 +6,7 @@
     background-color: $black;
     clip-path       : polygon(0 10%, 50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%);
 
-    &:before {
+    &::before {
         content        : '';
         position       : absolute;
         top            : 0;
