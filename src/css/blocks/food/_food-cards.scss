@@ -1,0 +1,133 @@
+.food-cards {
+    max-width: 90%;
+    margin   : 2.5rem auto;
+    @include flexAlign(center, center);
+    @include flexFlow(row);
+
+    .food-card {
+        --first-card-from : rgba(167, 149, 128, 0.5);
+        --first-card-to   : rgba(85, 67, 53, 1);
+        --second-card-from: rgba(176, 183, 191, 0.5);
+        --second-card-to  : rgba(156, 162, 176, 1);
+        --third-card-from : rgba(138, 104, 53, 0.5);
+        --third-card-to   : rgba(60, 42, 15, 1);
+
+        margin: 20px;
+        
+        &:hover figure {
+            transform        : perspective(600px) rotateY(180deg);
+            -moz-transform   : perspective(600px) rotateY(180deg);
+            -webkit-transform: perspective(600px) rotateY(180deg);
+            -o-transform     : perspective(600px) rotateY(180deg);
+            filter           : drop-shadow($box-shadow);
+        }
+
+        figure {
+            width             : 300px;
+            height            : auto;
+            position          : relative;
+            transition        : all .5s ease;
+            -moz-transition   : all .5s ease;
+            -webkit-transition: all .5s ease;
+            -o-transition     : all .5s ease;
+            transform-style   : preserve-3d;
+            transform         : perspective(600px) rotateY(0deg);
+
+            .card-front,
+            .card-back {
+                width             : 100%;
+                height            : 100%;
+                border-radius     : $border-radius;
+                transition        : all .5s ease;
+                -moz-transition   : all .5s ease;
+                -webkit-transition: all .5s ease;
+                -o-transition     : all .5s ease;
+            }
+
+            .card-front {
+                display: block;
+            }
+
+            .card-back {
+                position           : absolute;
+                top                : 0;
+                left               : 0;
+                padding            : 20px;
+                color              : $white;
+                transform          : perspective(600px) rotateY(180deg);
+                backface-visibility: hidden;
+                overflow           : auto;
+
+                .card-title {
+                    color        : $white;
+                    font-weight  : normal;
+                    margin-bottom: 20px;
+                    font-size    : 1.5rem;
+                }
+
+                hr {
+                    height          : 2px;
+                    border          : none;
+                    margin-bottom   : 20px;
+                    background-color: $white;
+                    opacity         : $opacity;
+                }
+
+                p {
+                    line-height: 22px;
+                    font-size  : .95rem;
+                }
+            }
+        }
+
+        &:nth-child(1) figure .card-back {
+            background: var(--first-card-from);
+            background: -moz-linear-gradient(top, var(--first-card-from) 0%, 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, var(--first-card-from)), color-stop(100%, var(--first-card-to)));
+            background: -webkit-linear-gradient(top, var(--first-card-from) 0%, var(--first-card-to) 100%);
+            background: -o-linear-gradient(top, var(--first-card-from) 0%, var(--first-card-to) 100%);
+            background: -ms-linear-gradient(top, var(--first-card-from) 0%, var(--first-card-to) 100%);
+            background: linear-gradient(to bottom, var(--first-card-from) 0%, var(--first-card-to) 100%);
+            filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr='#a79580', endColorstr='#554335', GradientType=0);
+        }
+
+        &:nth-child(2) figure .card-back {
+            background: var(--second-card-from);
+            background: -moz-linear-gradient(top, var(--second-card-from) 0%, var(--second-card-to) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, var(--second-card-from)), color-stop(100%, var(--second-card-to)));
+            background: -webkit-linear-gradient(top, var(--second-card-from) 0%, var(--second-card-to) 100%);
+            background: -o-linear-gradient(top, var(--second-card-from) 0%, var(--second-card-to) 100%);
+            background: -ms-linear-gradient(top, var(--second-card-from) 0%, var(--second-card-to) 100%);
+            background: linear-gradient(to bottom, var(--second-card-from) 0%, var(--second-card-to) 100%);
+            filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ca2b0', endColorstr='#cdccd1', GradientType=0);
+        }
+
+        &:nth-child(3) figure .card-back {
+            background: var(--third-card-from);
+            background: -moz-linear-gradient(top, var(--third-card-from) 0%, var(--third-card-to) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, var(--third-card-from)), color-stop(100%, var(--third-card-to)));
+            background: -webkit-linear-gradient(top, var(--third-card-from) 0%, var(--third-card-to) 100%);
+            background: -o-linear-gradient(top, var(--third-card-from) 0%, var(--third-card-to) 100%);
+            background: -ms-linear-gradient(top, var(--third-card-from) 0%, var(--third-card-to) 100%);
+            background: linear-gradient(to bottom, var(--third-card-from) 0%, var(--third-card-to) 100%);
+            filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr='#8a6835', endColorstr='#3c2a0f', GradientType=0);
+        }
+    }
+}
+
+@media (max-width: $screenLarge) {
+    .food-cards {
+        .food-card {
+            &:hover figure {
+                transform: perspective(600px) rotateX(0deg);
+            }
+
+            figure {
+                .card-back {
+                    backface-visibility: visible;
+                    transform          : perspective(600px) rotateX(0deg);
+                }
+            }
+        }
+    }
+}
