@@ -12,7 +12,7 @@
         --third-card-from : rgba(138, 104, 53, 0.5);
         --third-card-to   : rgba(60, 42, 15, 1);
 
-        margin: 20px;
+        margin: 1.25rem;
         
         &:hover figure {
             transform        : perspective(600px) rotateY(180deg);

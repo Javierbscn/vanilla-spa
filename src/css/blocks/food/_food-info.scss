@@ -1,0 +1,73 @@
+.food-info {
+    margin          : 2rem auto;
+    background-color: $white;
+    border-radius   : $border-radius;
+    @include flexAlign(center, center);
+
+    .info-text,
+    .info-img {
+        margin: 1.25rem;
+    }
+
+    .info-text {
+        color: $text-primary;
+
+        .info-title {
+            text-align   : center;
+            margin-bottom: 1rem;
+            font-size    : 1.3rem;
+        }
+
+        p {
+            line-height: 1.25rem;
+        }
+    }
+
+    .info-img {
+        img {
+            width        : 100%;
+            height       : auto;
+            border-radius: $border-radius;
+        }
+    }
+}
+
+@include mobile {
+    .food-info {
+        max-width: calc(100% - 2.5rem);
+        padding  : 1rem 0;
+        @include flexFlow(column);
+
+        .info-text {
+            width: 90%;
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .info-img {
+            width: calc(100% - 2.5rem);
+        }
+    }
+}
+
+@include tablet {
+    .food-info {
+        max-width: 80%;
+        padding  : 0;
+        @include flexFlow(row);
+
+        .info-text {
+            width: calc(70% - 2.5rem);
+
+            p {
+                font-size: 1.1rem;
+            }
+        }
+
+        .info-img {
+            width: calc(30% - 2.5rem);
+        }
+    }
+}
