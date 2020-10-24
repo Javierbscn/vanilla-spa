@@ -87,10 +87,10 @@
                 }
 
                 p {
-                    top      : 25%;
+                    top      : 10%;
                     left     : 23%;
                     width    : 55%;
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                 }
             }
         }
@@ -112,9 +112,9 @@
         .slider-slides {
             .slider-slide {
                 p {
-                    top      : 30%;
+                    top      : 20%;
                     left     : 25%;
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                 }
             }
         }
@@ -140,12 +140,13 @@
                 }
 
                 p {
+                    top      : 30%;
                     width    : 50%;
-                    font-size: 1.3rem;
+                    font-size: 1.2rem;
                 }
             }
         }
-
+        
         .slider-btns {
             a {
                 width    : 4rem;
