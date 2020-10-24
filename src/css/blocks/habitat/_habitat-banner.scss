@@ -5,6 +5,7 @@
     overflow        : hidden;
     background-color: $black;
     clip-path       : polygon(0 10%, 50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%);
+    @include flexAlign(center, center);
 
     &::before {
         content        : '';
@@ -18,28 +19,27 @@
         opacity        : $opacity;
     }
 
-    h2 {
-        position   : relative;
-        color      : $white;
+    .banner-title {
+        position  : relative;
+        padding   : .25rem;
+        text-align: center;
+
+        p {
+            position : relative;
+            font-size: 1.25rem;
+            color    : $white;
+        }
     }
 }
 
 @include mobile {
     .habitat-banner {
-        height: 300px;
-
-        h2 {
-            line-height: 300px;
-        }
+        height: 350px;
     }
 }
 
 @include laptop {
     .habitat-banner {
         height: 500px;
-
-        h2 {
-            line-height: 500px;
-        }
     }
 }

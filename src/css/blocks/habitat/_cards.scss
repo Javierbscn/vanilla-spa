@@ -1,9 +1,9 @@
 .cards {
-    @include flexAlign(space-around, center);
+    @include flexAlign(space-around, flex-start);
 
     .card {
         padding           : 1.75rem;
-        margin            : 1.25rem 0;
+        margin            : 1.25rem auto;
         background-color  : $primary-color;
         border-radius     : $border-radius;
         transition        : box-shadow .3s linear;
@@ -42,7 +42,8 @@
         @include flexFlow(row);
 
         .card {
-            width: 40vw;
+            width : 40vw;
+            height: 26.25rem;
         }
     }
 }
