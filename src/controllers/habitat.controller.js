@@ -1,11 +1,9 @@
-import views from '../views/habitat.html'
+import views from '../views/habitat.html';
 
 export default () => {
-    const $div = document.createElement('div')
+	const $div = document.createElement('div');
 
-    $div.innerHTML = views
+	$div.innerHTML = views;
 
-    
-
-    return $div
-}
+	return $div;
+};

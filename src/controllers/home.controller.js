@@ -1,9 +1,9 @@
-import views from '../views/home.html'
+import views from '../views/home.html';
 
 export default () => {
-    const $div = document.createElement('div')
+	const $div = document.createElement('div');
 
-    $div.innerHTML = views
+	$div.innerHTML = views;
 
-    return $div
-}
+	return $div;
+};
