@@ -1,4 +1,4 @@
-import { pages } from '../controllers/pages';
+import { view } from '../controller/views.controller';
 import slider from '../components/slider';
 
 export function router () {
@@ -8,19 +8,19 @@ export function router () {
 	$container.innerHTML = null;
 
 	if (!hash || hash === '#/') {
-		$container.appendChild(pages.home());
+		$container.innerHTML = view('home');
 
 	} else if (hash === '#/habitat') {
-		$container.appendChild(pages.habitat());
+		$container.innerHTML = view('habitat');
 
 	} else if (hash === '#/breding') {
-		$container.appendChild(pages.breding());
+		$container.innerHTML = view('breding');
 		slider();
 
 	} else if (hash === '#/food') {
-		$container.appendChild(pages.food());
+		$container.innerHTML = view('food');
 
 	} else {
-		$container.appendChild(pages.notFound());
+		$container.innerHTML = view();
 	}
 };
