@@ -3,11 +3,9 @@ import { router } from './routes/index.routes';
 import hamburgerMenu from './js/hamburger_menu';
 
 document.addEventListener('DOMContentLoaded', () => {
-    router('#/')
+	router();
 
-    hamburgerMenu('.panel-btn', '.panel', '.menu a')
-})
+	hamburgerMenu('.panel-btn', '.panel', '.menu a');
+});
 
-window.addEventListener('hashchange', () => {
-    router(window.location.hash)
-})
+window.addEventListener('hashchange', router);

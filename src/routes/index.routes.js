@@ -1,32 +1,26 @@
 import { pages } from '../controllers/pages';
 import slider from '../js/slider';
 
-let content = document.querySelector('#container-route');
+export function router () {
+	let $container = document.querySelector('#container-route'),
+		{ hash } = location;
 
-const router = (route) => {
-	content.innerHTML = '';
+	$container.innerHTML = null;
 
-	switch (route) {
-		case '#/': {
-			return content.appendChild(pages.home());
-		}
+	if (!hash || hash === '#/') {
+		$container.appendChild(pages.home());
 
-		case '#/habitat': {
-			return content.appendChild(pages.habitat());
-		}
+	} else if (hash === '#/habitat') {
+		$container.appendChild(pages.habitat());
 
-		case '#/breding': {
-			return content.appendChild(pages.breding()) && slider();
-		}
+	} else if (hash === '#/breding') {
+		$container.appendChild(pages.breding());
+		slider();
 
-		case '#/food': {
-			return content.appendChild(pages.food());
-		}
+	} else if (hash === '#/food') {
+		$container.appendChild(pages.food());
 
-		default: {
-			return content.appendChild(pages.notFound());
-		}
+	} else {
+		$container.appendChild(pages.notFound());
 	}
 };
-
-export { router };
