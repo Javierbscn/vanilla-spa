@@ -1,5 +1,5 @@
 import { pages } from '../controllers/pages';
-import slider from '../js/slider';
+import slider from '../components/slider';
 
 export function router () {
 	let $container = document.querySelector('#container-route'),
