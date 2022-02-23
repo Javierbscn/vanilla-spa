@@ -7,4 +7,4 @@ npm install
 npm run dev
 ```
 # App en producción
-https://spa-production.000webhostapp.com/
+https://vanillajs-spa.000webhostapp.com/
