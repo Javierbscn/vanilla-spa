@@ -23,7 +23,7 @@ module.exports = {
 				loader: 'html-loader',
 			},
 			{
-				test: /\.(png|svg|jpg|jpeg|gif)$/,
+				test: /\.(png|svg|jpg|jpeg|gif)$/i,
 				use: [{ loader: 'file-loader' }],
 			},
 		],
@@ -36,7 +36,7 @@ module.exports = {
 			filename: './css/styles.css',
 		}),
 		new CopyPlugin({
-			patterns: [{ from: 'src/assets', to: './assets/' }],
+			patterns: [{ from: './src/assets', to: './assets/' }],
 		}),
 	],
 };
