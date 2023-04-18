@@ -1,7 +1,3 @@
-@function img($file) {
-    @return url('/src/assets/img/'+ $file);
-}
-
 @mixin flexAlign($jcontent, $alcontent) {
     display        : flex;
     justify-content: $jcontent;
@@ -9,7 +5,7 @@
 }
 
 @mixin flexFlow($direction) {
-    flex-flow      : $direction wrap;
+    flex-flow: $direction wrap;
 }
 
 @mixin mobile() {

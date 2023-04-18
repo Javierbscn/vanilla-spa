@@ -10,7 +10,7 @@
         left           : 0;
         width          : 100%;
         height         : 100%;
-        background     : img('main-banner.jpg') no-repeat bottom center fixed;
+        background     : url('https://res.cloudinary.com/dj8k1j78s/image/upload/v1681854763/main-banner_ubjdrn.jpg') no-repeat bottom center fixed;
         background-size: cover;
         opacity        : $opacity;
     }
