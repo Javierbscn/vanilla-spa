@@ -1,9 +1,10 @@
-# Vanilla-spa
-Proyecto single page application con vanilla javascript. Este repositorio es el código de desarrollo de la app.
-Fue realizado con HTML, Sass, Javascript, Webpack y múltiples plugins del mismo.
-# Instalación
+# Vanilla SPA
+This is a Single Page Application project built entirely with vanilla JavaScript. The project also utilizes HTML, Sass, Webpack, and a variety of plugins to enhance functionality and optimize performance.
+
+# Installation
 1. `npm install`
 2. `npm run dev`
-3. ir a http://localhost:8080/ en tu navegador
-# App en producción
-https://vanillajs-spa.000webhostapp.com/
+3. Go to http://localhost:8080/ at your browser
+
+# App running
+[View the application](https://jsvanilla-spa.netlify.app/)
